@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "word_list_bucket" {
-  bucket = "word-list-bucket"
+  bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_versioning" "bucket_versioning" {
